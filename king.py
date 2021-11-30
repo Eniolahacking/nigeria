@@ -58,7 +58,7 @@ c2 = '\x1b[0;97m'
 c3 = '\x1b[1;31m'
 os.system('git pull')
 os.system('clear')
-logo = '\n\x1b[1;92m    _          _\n\x1b[1;92m     \\        /\n\x1b[1;92m    __\\______/__\n\x1b[1;92m    | [\x1b[1;31;1m\xc2\xa9\x1b[1;92m]  [\x1b[1;31;1m\xc2\xa9\x1b[1;92m] |\xe2\x80\x8b\n \x1b[1;92m   
+os.system('echo "\n  ███████  ▒ ▒ ▒ ███████     █           █\n  █                               █                      █         █\n  █                               █                      █      █\n  ███████              ███████    █   █\n█                               █                      █       █\n   ███████              █                      █         █\n    ▒   ▒▒ ░░░▒ ▒ ░ ▒ ▒ ░░  ░      ░\n    ░   ▒░  ░ ░ ░ ░ ░ ▒ ░░      ░\n        ░  ░  ░ ░     ░         ░\n            ░\n  \n    ╔═════════════════════════════╗\n    ║ TOOL NAME: { uck }        ║\n    ║ AUTHOR   : ENIOLA HACKING        ║\n    ║ GITHUB   : git.io/eniolahacking     ║\n    ╚═════════════════════════════╝" | lolcat -a -d 2 -s 50')	
 
 |  [\x1b[1;33m====\x1b[1;92m]  | [+] HACKERS NIGERIA [+]\n\x1b[1;92m
 
