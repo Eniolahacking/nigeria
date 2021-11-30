@@ -1640,7 +1640,7 @@ def ex_id():
 
 def lout():
     os.system('rm -rf access_token.txt')
-    print ' Successfully Delete Token'
+    print " Successfully Delete Token" 
     time.sleep(1)
     log_menu_s()
 
@@ -1648,5 +1648,3 @@ def lout():
 if __name__ == '__main__':
 
     main()
- 
- Print """
