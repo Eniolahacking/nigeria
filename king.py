@@ -1,5 +1,4 @@
-
-   
+ 
 # uncompyle6 version 3.7.4
 # Python bytecode 2.7 (62211)
 # Decompiled from: Python 2.7.18 (default, Aug  8 2021, 22:51:48) 
@@ -1647,4 +1646,5 @@ def lout():
 
 
 if __name__ == '__main__':
-    menu()
+
+    main()
