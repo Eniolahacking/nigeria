@@ -1643,10 +1643,8 @@ def lout():
     print " Successfully Delete Token" 
     time.sleep(1)
     log_menu_s()
-
-
-     menu()
-
+    raw_input("Press Enter To Main Menu Back")
+	menu()
 	
 
 if __name__ == '__main__':
