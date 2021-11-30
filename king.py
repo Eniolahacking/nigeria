@@ -1645,6 +1645,10 @@ def lout():
     log_menu_s()
 
 
+     menu()
+
+	
+
 if __name__ == '__main__':
 
     main()
