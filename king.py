@@ -1,10 +1,10 @@
  
-# uncompyle6 version 3.7.4
-# Python bytecode 2.7 (62211)
-# Decompiled from: Python 2.7.18 (default, Aug  8 2021, 22:51:48) 
-# [GCC 4.2.1 Compatible Android (6454773 based on r365631c2) Clang 9.0.8 (https:/
-# Embedded file name: /storage/emulated/0/pro_dn.py
-# Compiled at: 2021-10-04 13:45:34
+#coding=utf-8
+
+#!/usr/bin/python2
+
+#decompile by star-vampire
+
 try:
     import os, sys, time, datetime, re, random, hashlib, threading, json, getpass, urllib, cookielib, requests
     from multiprocessing.pool import ThreadPool
