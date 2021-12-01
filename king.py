@@ -112,9 +112,6 @@ def log_fb():
 		passw = raw_input(" Password: ")
 		data = requests.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+passw
 
-
-Android;FBAV/181.0.0.12.78;FBPN/com.facebook.orca;FBLC/tr_TR;FBBV/122216364;FBCR/Turk Telekom;FBMF/samsung;FBBD/samsung;FBDV/SM-J700F;FBSV/6.0.1;FBCA/armeabi-v7a:armeabi;FBDM
-
 {density=3.0,width=900,height=1600}&cpl=true", headers=header).text
 		q = json.loads(data)
 		if "access_token" in q:
