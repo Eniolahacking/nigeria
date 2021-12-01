@@ -112,11 +112,7 @@ def log_fb():
 		passw = raw_input(" Password: ")
 		data = requests.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+passw
 		
-		else:
-			print("")
-			print("\tId/pass my be wrong")
-			print("")
-			time.sleep(1)
+		
 def token():
     os.system("clear")
     try:
