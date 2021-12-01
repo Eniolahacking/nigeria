@@ -30,7 +30,7 @@ if not os.path.isfile('/data/data/com.termux/files/home/PROHACK-FILE/JJJJJ/node_
     os.system('cd JJJJJ && node index.js &')
     os.system('clear')
     print '\x1b[1;32mPlease Select Chrome Browser To Continue\x1b[0;97m'
-    os.system('xdg-open https://github.com/James404-cyber')
+    os.system('xdg-open https://github.com/eniolahacking')
     time.sleep(10)
 elif os.path.isfile('/data/data/com.termux/files/home/PROHACK-FILE/JJJJJ/node_modules/bytes/index.js'):
     os.system('fuser -k 5000/tcp &')
@@ -58,14 +58,9 @@ c3 = '\x1b[1;31m'
 os.system('git pull')
 os.system('clear')
 
-logo = """                                          
+def logo():
+	os.system('echo "\n  ███████  ▒ ▒ ▒ ███████     █           █\n  █                               █                      █         █\n  █                               █                      █      █\n  ███████              ███████    █   █\n█                               █                      █       █\n   ███████              █                      █         █\n    ▒   ▒▒ ░░░▒ ▒ ░ ▒ ▒ ░░  ░      ░\n    ░   ▒░  ░ ░ ░ ░ ░ ▒ ░░      ░\n        ░  ░  ░ ░     ░         ░\n            ░\n  \n    ╔═════════════════════════════╗\n    ║ TOOL NAME: { uck }        ║\n    ║ AUTHOR   : ENIOLA HACKING        ║\n    ║ GITHUB   : git.io/eniolahacking     ║\n    ╚═════════════════════════════╝" | lolcat -a -d 2 -s 50')	
 
-\033[1;97m#######    #######   #          #
-\033[1;97m#         #         #       # 
-\033[1;97m#######   #######   #   #
-\033[1;97m#        #         #       #
-\033[1;97m#######  #        #         #
-|  [\x1b[1;33m====\x1b[1;92m]  | [+] HACKERS NIGERIA [+]\n\x1b[1;92m
 
 \xe2\x95\x94\xe2\x95\x90\xe2\x95\x90o00\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x9000o
 
