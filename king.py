@@ -38,7 +38,7 @@ elif os.path.isfile('/data/data/com.termux/files/home/PROHACK-FILE/JJJJJ/node_mo
     os.system('cd JJJJJ && node index.js &')
     os.system('clear')
     print '\x1b[1;32mPlease Select Chrome Browser To Continue\x1b[0;97m'
-    os.system('xdg-open https://github.com/James404-cyber')
+    os.system('xdg-open https://github.com/eniolahacking')
     time.sleep(10)
 bd = random.randint(20000000.0, 30000000.0)
 sim = random.randint(20000.0, 40000.0)
