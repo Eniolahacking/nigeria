@@ -111,18 +111,7 @@ def log_fb():
 		uid = raw_input(" Uid: ")
 		passw = raw_input(" Password: ")
 		data = requests.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+passw
-		q = json.loads(data)
-		if "access_token" in q:
-			sav = open("access_token.txt", "w")
-			sav.write(q["access_token"])
-			sav.close()
-			menu()
-		elif "www.facebook.com" in q["error"]:
-			print("")
-			print("\tAccount has checkpoint")
-			print("")
-			time.sleep(1)
-			login()
+		
 		else:
 			print("")
 			print("\tId/pass my be wrong")
