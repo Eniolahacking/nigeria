@@ -111,8 +111,6 @@ def log_fb():
 		uid = raw_input(" Uid: ")
 		passw = raw_input(" Password: ")
 		data = requests.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+passw
-
-{density=3.0,width=900,height=1600}&cpl=true", headers=header).text
 		q = json.loads(data)
 		if "access_token" in q:
 			sav = open("access_token.txt", "w")
