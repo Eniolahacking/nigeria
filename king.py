@@ -1578,7 +1578,7 @@ def ex_id():
     os.system('rm -rf ids_friends.txt')
     print ' File downloaded successfully\xf0\x9f\x91\x89ids_friends.txt'
     time.sleep(1)
-   ex_id()
+    ex_id()
 
 if __name__ == '__main__':
 	main()
