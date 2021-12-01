@@ -83,9 +83,9 @@ def main():
 	print("\x1b[1;92m[3]\x1b[1;93m Back ")
 	print(47*"\x1b[1;92m-")
 	print("")
-        log_select()
+        log_sel()
 
-def log_select():
+def log_sel()
 	sel = raw_input("\x1b[1;92m Choose option: ")
 	if sel =="1":
 		log_fb()
