@@ -1580,16 +1580,6 @@ def ex_id():
     time.sleep(1)
     menu()
 
+  if __name__ == '__main__':
 
-def lout():
-    os.system('rm -rf access_token.txt')
-    print " Successfully Delete Token" 
-    time.sleep(1)
-    log_menu_s()
-    raw_input("Press Enter To Main Menu Back")
-	menu()
-	
-
-if __name__ == '__main__':
-
-    main()
+       main()
