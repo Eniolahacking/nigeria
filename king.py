@@ -98,21 +98,6 @@ def log_select():
 		print("\tSelect valid option")
 		print("")
 		log_select()
-def log_fb():
-	os.system("clear")
-	try:
-		token = open("access_token.txt", "r").read()
-		menu()
-	except (KeyError , IOError):
-		print(logo)
-		print("")
-		print("\tFacebook id/pass login")
-		print("")
-		uid = raw_input(" Uid: ")
-		passw = raw_input(" Password: ")
-		data = requests.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+passw
-		
-		
 def token():
     os.system("clear")
     try:
