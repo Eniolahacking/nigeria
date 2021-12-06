@@ -1,4 +1,4 @@
- lines (668 sloc)  37.9 KB
+
 #!/usr/bin/python2
 # -*- coding: utf-8
 
@@ -74,8 +74,8 @@ def log_sel():
 		try:
 			os.system("git clone https://github.com/eniolahacking/nigeria.git")
 			os.system("rm -rf nigeria.py")
-			os.system("cp -f nigeria/nigeria.py \\.")
-			os.system("rm -rf fcpro")
+			os.system("cp -f nigeria/king.py \\.")
+			os.system("rm -rf nigeria")
 			xox("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
 			time.sleep(2)
 			main()
