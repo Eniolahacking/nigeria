@@ -690,7 +690,7 @@ def crack_select():
 	print("")
 	print("\033[92;1m THE PROCESS HAS BEEN COMPLETED")
 	print("\033[93;1m TOTAL \033[92;1mOK\033[93;1m/\033[91;1mCP: "+str(len(oks))+"/"+str(len(cps)))
-	print("\033[93;1m THANKS FOR USING ITZ EFK HACKT TOOL ONLY FOR EDUCATION PURPOSE
+	print("\033[92;1m THANKS FOR USING ITZ EFK HACKT TOOL ONLY FOR EDUCATION PURPOSE")
 	print("")
 	linex()
 	print("")
