@@ -1,4 +1,3 @@
-
 #!/usr/bin/python2
 # -*- coding: utf-8
 
@@ -13,7 +12,7 @@ try:
 	from requests.exceptions import ConnectionError
 except ImportError:
 	os.system("pip2 install requests lolcat")
-	os.system("python2 nigeria.py")
+	os.system("python2 king.py")
 
 from os import system
 from time import sleep
@@ -74,8 +73,8 @@ def log_sel():
 		try:
 			os.system("git clone https://github.com/eniolahacking/nigeria.git")
 			os.system("rm -rf nigeria.py")
-			os.system("cp -f nigeria/king.py \\.")
-			os.system("rm -rf nigeria")
+			os.system("cp -f nigeria/nigeria.py \\.")
+			os.system("rm -rf fcpro")
 			xox("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
 			time.sleep(2)
 			main()
